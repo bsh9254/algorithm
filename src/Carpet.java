@@ -5,16 +5,16 @@ public class Carpet {
 
         for(int i=1;i<=capetSize;i++)
         {
-            int row=i;
+            int row= i;
             int col=capetSize/row;
-
             if(row>col)
             {
                 continue;
             }
-            if((row-2)*(col-2)==yellow){
-                answer[0]=col;
-                answer[1]=row;
+            if((row-2)*(col*2)==yellow)
+            {
+                answer[0]=row;
+                answer[1]=col;
                 return answer;
             }
         }
